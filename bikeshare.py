@@ -551,4 +551,4 @@ app.layout = html.Div([
 # Main Function
 # #############################################################################
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server()    # Start the Dash App Server
