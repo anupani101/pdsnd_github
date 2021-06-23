@@ -17,9 +17,6 @@ import plotly.express as px
 CITY_DATA = {'chicago': 'chicago.csv',
              'nyc': 'new_york_city.csv',
              'washington': 'washington.csv'}
-# Main DataFrame
-# Loaded after user filter selections
-DF = pd.DataFrame()
 
 # City Name: required to conditionally display additional user stats
 # Loaded after user filter selections
@@ -28,6 +25,12 @@ CITY = ""
 # Counter to keep track of the rows of raw data to display
 ROW_COUNTER = 0
 ROW_ADVANCE = 5
+
+# Main DataFrame
+# Loaded after user filter selections
+DF = pd.DataFrame()
+
+
 
 # #############################################################################
 # Function definitions
@@ -267,8 +270,7 @@ def user_stats(df):
                             height=300,
                             width=700,
                             title_x=0.5,
-                            title_font_size=20,
-                            )
+                            title_font_size=20)
     pie_chart.update_traces(textposition='inside', textinfo='percent+label',
                             marker = dict(colors=colors, line=dict(color='#000000', width=2)))
 
@@ -277,7 +279,7 @@ def user_stats(df):
 
 
 
-    # Display counts of gender
+    # Display counts of gender only if city is Washington
     if CITY == 'washington':
         gender_na_text = "Gender data is not available for {} right now!".format(CITY.capitalize())
         birth_na_text = "Birth Year data is not available for {} right now!".format(CITY.capitalize())
