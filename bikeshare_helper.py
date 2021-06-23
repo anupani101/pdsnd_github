@@ -270,8 +270,7 @@ def user_stats(df):
                             height=300,
                             width=700,
                             title_x=0.5,
-                            title_font_size=20,
-                            )
+                            title_font_size=20)
     pie_chart.update_traces(textposition='inside', textinfo='percent+label',
                             marker = dict(colors=colors, line=dict(color='#000000', width=2)))
 
