@@ -17,9 +17,6 @@ import plotly.express as px
 CITY_DATA = {'chicago': 'chicago.csv',
              'nyc': 'new_york_city.csv',
              'washington': 'washington.csv'}
-# Main DataFrame
-# Loaded after user filter selections
-DF = pd.DataFrame()
 
 # City Name: required to conditionally display additional user stats
 # Loaded after user filter selections
@@ -28,6 +25,12 @@ CITY = ""
 # Counter to keep track of the rows of raw data to display
 ROW_COUNTER = 0
 ROW_ADVANCE = 5
+
+# Main DataFrame
+# Loaded after user filter selections
+DF = pd.DataFrame()
+
+
 
 # #############################################################################
 # Function definitions
