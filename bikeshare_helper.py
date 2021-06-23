@@ -279,7 +279,7 @@ def user_stats(df):
 
 
 
-    # Display counts of gender
+    # Display counts of gender only if city is Washington
     if CITY == 'washington':
         gender_na_text = "Gender data is not available for {} right now!".format(CITY.capitalize())
         birth_na_text = "Birth Year data is not available for {} right now!".format(CITY.capitalize())
