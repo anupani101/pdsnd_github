@@ -3,7 +3,7 @@
 The US Bikeshare Project was created as part of the curriculum for Udacity's [Programming for Data Science with Python](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104) Nanodegree Program.
 
 ## Description
-This project explores the data related to bike share systems in three major cities in the USA, namely, Chicago, New York City and Washington DC. Python is used as the underlying programming language of choice. This project is an interactive web application using Python Dash component library and can be deployed on the local machine.
+This project explores the data related to bike share systems in three major cities in the USA, namely, Chicago, New York City and Washington DC. Python is used as the underlying programming language of choice. This project is an interactive web application using Python Dash Bootstrap component library and can be deployed on the local machine.
 
 The statistics computed for this project are:
 
